@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+
+
+
+    <script>
+        let firstName = "arpit";
+        let lastName = "kumar";
+        let str = "this is zensar Zensar training";
+        document.getElementById("demo").innerHTML = str.search(/zensar/i);
+        document.getElementById("demo1").innerHTML = str.match(/zensar/gi);
+        document.getElementById("demo2").innerHTML = str.startsWith("this");
+        document.getElementById("demo3").innerHTML = `welcome ${firstName} ${lastName}`;
+
+        // let i=9;
+        // while(i>=0){
+        //     alert(i);
+        //     i--;
+        // }
+    </script>
+</body>
+</html>

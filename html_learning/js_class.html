@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        class Car{
+            constructor(name, color, price, variant, year){
+                this.name = name,
+                this.color = color,
+                this.price = price,
+                this.variant = variant,
+                this.year = year
+            }
+            carAge(){
+                let date = new Date();
+                return date.getFullYear()-this.year;
+            }
+        }
+
+        const car1 = new Car("xuv", "red", 120000, "petrol",2000);
+        console.log(car1);
+
+        let s = select('#demo');
+        console.log(s)
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        // function displayVal(numONe,numTwo){
+        //     return numONe * numTwo;
+        // }
+        // document.write(displayVal(2,3))
+        // document.getElementById("demo").innerHTML = displayVal(2,3);
+        // alert(displayVal(2,3));
+        // console.log(displayVal(2,3))
+
+
+       const trainee={
+           fullname : function(country){
+               return this.fname + " " + this.lname ;
+           }
+       }
+
+       const trainee1={
+           fname:"arpit",
+           lname:"kumar"
+       }
+
+       const trainee2={
+           fname:"anurag",
+           lname:"singh"
+       }
+
+       let x= trainee.fullname.bind(trainee1);
+       document.getElementById("demo").innerHTML = trainee.fullname.call(trainee1,"india");
+       document.getElementById("demo1").innerHTML = x();
+
+        </script>
+</body>
+</html>

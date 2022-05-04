@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+
+
+    <script>
+        let numberOne = 10.0909;
+        
+        document.getElementById("demo").innerHTML = numberOne.toString();
+        document.getElementById("demo2").innerHTML = numberOne.toExponential(2);
+        document.getElementById("demo3").innerHTML = numberOne.toFixed();
+        document.getElementById("demo4").innerHTML = numberOne.toPrecision(4);
+        document.getElementById("demo5").innerHTML = numberOne.valueOf();
+        document.getElementById("demo6").innerHTML = Number(true) + "<br>" + Number(false);
+        document.getElementById("demo7").innerHTML = parseInt(10.87653563457);
+        document.getElementById("demo8").innerHTML = parseFloat(10.87);
+        document.getElementById("demo9").innerHTML = Number.MAX_VALUE;
+        document.getElementById("demo10").innerHTML = Number.MIN_VALUE;
+        document.getElementById("demo11").innerHTML = Number.MAX_SAFE_INTEGER;
+        document.getElementById("demo12").innerHTML = Number.MIN_SAFE_INTEGER;
+
+        // document.getElementById("demo7").innerHTML = numberOne.valueOf();
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script type="text/javascript">
+        var num1 = prompt("Write a number", ' ');//try number 10
+        var num2 = 10;
+        if( num1 > num2 ){
+        document.write("The number you wrote" +num1+ " is less than 10");
+        }else{
+        document.write("The number you wrote" +num1+ " is more than 10");
+        }
+      </script> 
+    
+        error in this program is that prompt function always return string, so if we enter number 10 then prompt function returns 10 in string
+        to correct this program we need to comvert num1 to number using Number function
+        and adding some extra logic to cover boundary cases-->
+
+
+    <script type="text/javascript">
+        var num1 = Number(prompt("Write a number", ' '));//try number 10
+        var num2 = 10;
+        if( num1 > num2 ){
+        document.write("The number you wrote" +num1+ " is more than 10");
+        }else if(num1 === num2){
+            document.write("The number you wrote" +num1+ " is euqal to 10");
+        }else{
+        document.write("The number you wrote" +num1+ " is less than 10");
+        }
+      </script>
+</body>
+</html>

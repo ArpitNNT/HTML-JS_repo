@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+    <p id="demo4"></p>
+
+    <p id="demo5"></p>
+
+
+
+    <script>
+        let fruits = ["apple", "banana", "orange"];
+        document.getElementById("demo").innerHTML = fruits;
+        document.getElementById("demo1").innerHTML = fruits.length;
+
+        document.getElementById("demo2").innerHTML = fruits.sort();
+
+
+        const arr = new Array("arpit", "kumar");
+        document.getElementById("demo4").innerHTML = arr;
+
+        const marks = {
+            day1:20,
+            day2:30,
+            day3:40
+        };
+        document.getElementById("demo5").innerHTML = marks.day2;
+    </script>
+</body>
+</html>

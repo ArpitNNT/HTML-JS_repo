@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ques6</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+       .div{
+            max-width: 30%;
+            margin: auto;
+            margin-top: 5%;
+        }
+        p{
+            margin-top: 5px;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container div">
+        Enter first number <input type="text" name="" id="firstInput" class="form-control"> 
+        <br>
+        Enter second number <input type="text" name="" id="secondInput" class="form-control">
+        <br>
+        <button onclick="displayLarger()" class="btn btn-primary">Display larger</button>
+        <br>
+        <p id="result"></p>
+    </div>
+    
+
+
+    <script>
+        
+
+        function displayLarger(){
+            let firstNumber = document.getElementById("firstInput").value;
+            let secondNumber = document.getElementById("secondInput").value;
+            lagerNumber = (firstNumber > secondNumber) ? firstNumber : secondNumber;
+            document.getElementById("result").innerHTML = "Larger number is " + lagerNumber;
+        }
+    </script>
+</body>
+</html>

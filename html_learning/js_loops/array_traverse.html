@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <ul id="list"></ul>
+
+    <script>
+        let list = document.getElementById("list");
+
+        let arr=["a", "b", "c", "d", "e", "f", "g"];
+        for(let i in arr){
+            console.log(arr[i])
+            list.innerHTML += `<li>${arr[i]}</li>`
+        }
+
+
+
+        let i, len, res;
+        i=0;
+        len = arr.length;
+        res = [];
+        
+        for(;i<len;){
+            res += arr[i] + "<hr>";
+            i++
+        }
+        document.getElementById("demo").innerHTML = res;
+
+
+
+        let avg = 0;
+        const trainee = {week1:12, week2:23, week3:45, week4:63};
+       for(const value of Object.values(trainee)){
+        avg += value
+       }
+       console.log(avg)
+
+        // const arr1 = [12,34,456,68];
+        // let val1 = [];
+        // arr1.forEach(nyFunc);
+        // function nyFunc(value){
+        //     val1 += value;
+        //     console.log(val1);
+        // }
+
+    </script>
+</body>
+</html>

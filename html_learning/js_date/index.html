@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="display"></p>
+    <p id="display1"></p>
+    <p id="display2"></p>
+    <p id="display3"></p>
+    <p id="display4"></p>
+    <p id="display5"></p>
+    <p id="display6"></p>
+    <p id="display7"></p>
+    <p id="display8"></p>
+    <p id="display9"></p>
+
+
+
+
+    <script>
+        dt = new Date();
+        dt1 = dt.getTime();
+        document.getElementById("display").innerHTML = dt;
+        document.getElementById("display1").innerHTML = dt1;
+        document.getElementById("display2").innerHTML = dt.getFullYear();
+        document.getElementById("display3").innerHTML = dt.getMonth();
+        document.getElementById("display4").innerHTML = dt.getDay();
+        document.getElementById("display5").innerHTML = dt.getHours();
+        document.getElementById("display6").innerHTML = dt.getMinutes()
+        document.getElementById("display7").innerHTML = dt.getSeconds()
+        document.getElementById("display8").innerHTML = dt.getMilliseconds()
+
+        function getTime(){
+            dt = new Date();
+            document.getElementById("display9").innerHTML = dt.toLocaleTimeString();
+            console.log(dt.toLocaleTimeString())
+        }
+        setInterval(getTime,1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="" id="dropdown" onchange="myFunction()">
+        <option value="">select</option>
+        <option value="apple">apple</option>
+        <option value="orange">orange</option>
+        <option value="banana">banana</option>
+        <option value="guvava">guvava</option>
+    </select>
+    <h1 id="demo" style="text-align:center"></h1>
+
+    <script>
+        function myFunction(){
+       value = document.getElementById("dropdown").value;
+            if(value === "apple"){
+                document.getElementById("demo").style.color = "red";
+                document.getElementById("demo").innerHTML = value;
+
+            }
+            if(value === "orange"){
+                document.getElementById("demo").style.color = "orange";
+                document.getElementById("demo").innerHTML = value;
+
+            }
+            if(value === "banana"){
+                document.getElementById("demo").style.color = "yellow";
+                document.getElementById("demo").innerHTML = value;
+
+            }
+            if(value === "guvava"){
+                document.getElementById("demo").style.color = "green";
+                document.getElementById("demo").innerHTML = value;
+
+            }
+        }
+    </script>
+</body>
+</html>

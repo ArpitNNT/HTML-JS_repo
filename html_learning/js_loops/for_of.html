@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        let val1 = ["abc", "def", "ghi", "jkl", "mno"];
+        let res = "";
+        for(let i of val1){
+            res += i + "<hr>";
+        }
+        document.getElementById("demo").innerHTML = res;
+
+
+        for(let i = 0; i<=5; i++){
+            if(i===3){
+                continue;
+            }
+            console.log(i);
+        }
+
+        const s1 = new Set(["a","b","c","c","r"]);
+        console.log(s1)
+
+
+        console.log("map function")
+        const ar1 = [1,2,3,4,5];
+        const newAr = ar1.map(myFunc);
+        function myFunc(item){
+            console.log(item*2);
+        }
+    </script>
+</body>
+</html>

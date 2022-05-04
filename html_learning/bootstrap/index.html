@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <style>
+        /* .table-currency {
+            
+            font-family: system-ui;
+            display: none;
+        }
+        caption{
+            margin-bottom: 5px;
+            font-size: xx-large;
+        }   
+
+        th{
+            color:#0485f5;
+            background-color: rgb(169, 207, 240);
+            border-color: rgb(169, 207, 240);
+        }
+        td{
+            color: #1c588d;;
+            text-align: center;
+            background-color: rgb(201, 226, 248);
+            border-color: rgb(201, 226, 248);
+        } */
+
+        caption{
+            width: 69em;
+        }
+
+        /* #heading{
+            display: none;
+        } */
+        #indian{
+            display: none;
+        }
+
+        #dollar{
+            display: none;
+        }
+
+        #euro{
+            display: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <button class="btn btn-primary" type="button" onclick="btnIndian()">Indian</button>
+        <button class="btn btn-success" type="button" onclick="btnDollar()">Dollar</button>
+        <button class="btn btn-danger" type="button" onclick="btnEuro()">European</button>
+        <br>
+
+        <table id="indian" class="table table-striped text-center mt-5 table-currency">
+            <caption id="heading"></caption>
+            <thead>
+                <tr>
+                    <th>Sr no</th>
+                    <th>Name</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Arpit</td>
+                    <td>&#8377; 21000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Anup</td>
+                    <td>&#8377; 42000</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Ajay</td>
+                    <td>&#8377; 44000</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Ujjwal</td>
+                    <td>&#8377; 12000</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Anurag</td>
+                    <td>&#8377; 27000</td>
+                </tr>
+            </tbody>
+          </table>
+
+          <table id="dollar" class="table table-striped text-center mt-5 table-currency">
+            <caption id="heading"></caption>
+            <thead>
+                <tr>
+                    <th>Sr no</th>
+                    <th>Name</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Liam</td>
+                    <td>&#36; 21000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Noah</td>
+                    <td>&#36; 42000</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Oliver</td>
+                    <td>&#36; 44000</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Elijah</td>
+                    <td>&#36; 12000</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Alexander</td>
+                    <td>&#36; 27000</td>
+                </tr>
+            </tbody>
+          </table>
+
+          <table id="euro" class="table table-striped text-center mt-5 table-currency">
+            <caption id="heading"></caption>
+            <thead>
+                <tr>
+                    <th>Sr no</th>
+                    <th>Name</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Isla</td>
+                    <td>&#8364; 21000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Maya</td>
+                    <td>&#8364; 42000</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Adriana</td>
+                    <td>&#8364; 44000</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Clare</td>
+                    <td>&#8364; 12000</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Logan</td>
+                    <td>&#8364; 27000</td>
+                </tr>
+            </tbody>
+          </table>
+    </div>
+
+    <script>
+        let indian = document.getElementById("indian");
+        let dollar = document.getElementById("dollar");
+        let euro = document.getElementById("euro");
+
+
+        function btnIndian(){
+            indian.style.display = "block";
+            // indian.style.maxWidth = "80%";
+            // indian.style.margin = "auto";
+
+            euro.style.display = "none";
+            dollar.style.display = "none";
+        }
+
+        function btnDollar(){
+            dollar.style.display = "block";
+            // dollar.style.maxWidth = "80%";
+            // dollar.style.margin = "auto";
+            indian.style.display = "none";
+            euro.style.display = "none";
+        }
+            
+
+        function btnEuro(){
+            euro.style.display = "block";
+            // euro.style.maxWidth = "80%";
+            // euro.style.margin = "auto";
+            dollar.style.display = "none";
+            indian.style.display = "none";
+
+        }
+    </script>
+</body>
+</html>

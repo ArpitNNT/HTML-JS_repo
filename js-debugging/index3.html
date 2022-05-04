@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="txt"></p>
+
+
+    <!-- <script type="text/javascript">
+        function startTime()
+        {
+        var today=new Date()
+        var h=today.getHours()
+        var m=today.getMinutes()
+        var s=today.getSeconds()
+        // add a zero in front of numbers<10
+        m=checkTime(m)
+        s=checkTime(s)
+        document.getelementById('txt').innerHTML=h+":"+m+":"+s
+        t=settimeout('startTime()',500)
+        }
+       
+        function checkTime(i)
+        {
+        if (i<10)
+          {i="0" + i}
+          return i
+        }
+        </script> -->
+
+      <!-- in above script 
+      # calling of fucntion startTime not present
+      # document.getelementById('txt') 
+        # uppercase letters in getelementById
+        # id txt not in body
+      # settimeout should be setTimeout
+       -->
+
+       
+    <script type="text/javascript">
+        function startTime()
+        {
+        var today=new Date()
+        var h=today.getHours()
+        var m=today.getMinutes()
+        var s=today.getSeconds()
+        // add a zero in front of numbers<10
+        m=checkTime(m)
+        s=checkTime(s)
+        document.getElementById('txt').innerHTML=h+":"+m+":"+s
+        t=setTimeout('startTime()',500)
+        }
+       
+        function checkTime(i)
+        {
+        if (i<10)
+          {i="0" + i}
+          return i
+        }
+        startTime();
+
+        </script>
+</body>
+</html>

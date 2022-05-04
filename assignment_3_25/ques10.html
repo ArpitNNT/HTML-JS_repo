@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ques10</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <p>The code tells how many combinations of halves, quarters, dimes, nicks and pennies makes a dollar ( = 100 pennies) So, according to the result = 292 combinations</p>
+    <script>
+        var count = 0; 
+        for (var half = 0; half <= 2; half++) { 
+            for (var qtr = 0; qtr <= 4; qtr++) { 
+                for (var dime = 0; dime <= 10; dime++) { 
+                    for (var nick = 0; nick <= 20; nick++) { 
+                        for (penny = 0; penny <= 100; penny++) { 
+                            if (50 * half + 25 * qtr + 10 * dime + 5 * nick + penny == 100) { count++; 
+                            } 
+                        } 
+                    } 
+                } 
+            } 
+        } alert(count);
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function greet(){
+        //     console.log("hello world");
+        // }
+        // function sayName(name){
+        //     console.log("hello " + name);
+        // }
+        // sayName("john");
+        // setTimeout(greet, 4000);
+
+
+
+
+        // function greet(name, callback){  //callback is function sayName()
+        //     console.log('Hello greet');
+        //     callback(name);
+        // }
+        // function sayName(name){
+        //     console.log("hello " + name);
+        // }
+        // setTimeout(greet, 2000, 'john', sayName);
+
+
+        // function func(val){
+        //     console.log(val);
+        // }
+        // setTimeout(function(){
+        //     func("hello")
+        // },3000);
+
+        let dt = new Date();
+        function clock(){
+            console.log(dt.toLocaleTimeString());
+        }
+        setInterval(clock, 1000);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ques7</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        p{
+            text-align: center;
+            margin-top: 5%;
+            color: #0000fd;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-3">
+        <p id="result"></p>
+
+    </div>
+    <!-- <input type="text" name="name"> -->
+    <script>
+        let items = [];
+        let firstNumber = Number(prompt("Enter first number"));
+        items.push(firstNumber);
+        let secondNumber = Number(prompt("Enter second number"));
+        items.push(secondNumber);
+
+        document.getElementById("result").innerHTML = "Numbers in ascending order are " + items.sort();
+        // let val = document.querySelector('input');
+        // val.addEventListener('input', getVals);
+        // function getVals(e){
+        //     // console.log(e.target.value)
+        //     items.push(e.target.value);
+        // }
+    
+    </script>
+</body>
+</html>
